@@ -1,0 +1,122 @@
+:root{
+    --color1:#0DD9C4;
+    --color2:#026873;
+    --color3:#4ED97F;
+    --color4:#0DC5CA;
+    --color5:white;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+#contenedor{
+    width: 90%;
+    margin: 20px auto;
+    border: 1px solid grey;
+    padding: 5px;    
+    background: url(img/trama-di-carta-bianca-sgualcita-per-sfondo.jpg);
+    flex-wrap: wrap;
+}
+
+/*ESTILOS CABECERA*/
+#cabecera{
+    height: 150px;
+    background-color: var(--color4);
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin: 5px; 
+    
+}
+#cabecera img{
+    height: 120px;
+    margin: 2px;
+    padding: 0px 0px 0px 40px; 
+}
+h1{
+    margin-right: 20px;
+    padding: 0px 40px 0px 0px;
+    color:var(--color2);
+    font-size: 20px;
+}
+nav{
+    height: 90px;
+    margin: 5px;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: end;
+}
+nav ul li {
+    min-width: 90px;
+}
+nav ul li a{
+    text-decoration: none;
+    background-color: var(--color4);
+    color: var(--color2);
+    padding: 2px 15px;
+    display: block;
+    font-size: 13px;
+}
+nav ul li a:hover{
+    background-color: #e0dada;
+}
+nav ul li ul{
+    display: flex;
+    flex-direction: column;
+    display: none; /*ocultar los hijos del ul*/;
+}
+nav ul li:hover >ul{
+    display: block;
+}
+/*Columnas*/
+
+#contenido {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap; /* Permite que las columnas se apilen en móviles */
+    padding: 15px;
+    gap: 20px;
+    text-align: justify;
+    
+}
+h2{
+    text-align: center;
+}
+.imagenes{
+    max-width: 100%; /* La imagen nunca será más ancha que su contenedor */
+    height: auto;    /* Mantiene la relación de aspecto */
+    margin: 0 auto;  /* Centra la imagen horizontalmente si es más pequeña que el contenedor */
+}
+
+.img {
+    margin: 5px,5px,5px,5px;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    padding: 15px, 15px;
+}
+
+    /* Footer */
+footer{
+    background-color: var(--color4);
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+    color: white;
+    
+}
+footer a{
+    color: white;
+}
+footer p{
+    padding: 2px;
+    text-align: center;
+}
+footer i{
+    font-size: 1em;
+}
